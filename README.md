@@ -1,1 +1,1 @@
-# GISIDEA_worksho
+# GISIDEA_workshop
