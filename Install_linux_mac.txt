@@ -1,0 +1,38 @@
+Installation prior to start the workshop
+
+
+Download anaconda for Linix and mac  form the website
+Linux = https://www.anaconda.com/download/#linux
+install anaconda3
+$ bash ~/Downloads/Anaconda3-5.3.0-Linux-x86_64.sh
+$ source ~/.bashrc
+
+Mac = https://anaconda.com/download/#macos
+install using gui
+
+All the libraries  will be installed on a “conda” virtual environment
+
+Open a terminal client.
+
+$ conda -V
+Check available  python versions
+$ conda search "^python$"
+conda list the available environment
+$ conda info -e
+Create a virtual environment for your project
+$ conda create -n GISIDEA_AI python=3.6.0 anaconda
+
+Activate your virtual environment.
+$ source activate GISIDEA_AI
+-----------------------------------------------------------
+Install additional Python packages to a virtual environment
+-----------------------------------------------------------
+conda install -n GISIDEA_AI  pip
+pip install --upgrade tensorflow
+pip install  keras
+conda install pytorch torchvision -c pytorch
+pip install jupyter
+
+remove the eviornment if you dont need it  further
+$ source deactivate GISIDEA_AI
+$conda env remove -n GISIDEA_AI
