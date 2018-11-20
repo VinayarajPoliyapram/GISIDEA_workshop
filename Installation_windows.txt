@@ -1,0 +1,31 @@
+﻿Installation prior to start the workshop
+All the libraries  will be installed on a “conda” virtual enviourmnent
+
+Install anaconda from https://anaconda.org/
+
+Open the anaconda prompt.
+$ conda -V
+
+Check available  python versions
+$ conda search "^python$"
+
+conda list the available enviornment
+$ conda info -e
+
+Create a virtual environment for your project
+$ conda create -n GISIDEA_AI python=3.6.0 anaconda
+
+Activate your virtual environment.
+$ conda activate GISIDEA_AI
+-----------------------------------------------------------
+Install additional Python packages to a virtual environment
+-----------------------------------------------------------
+pip install --upgrade tensorflow
+pip install  keras
+conda install pytorch -c pytorch
+
+pip install torchvision
+
+remove the eviornment if you dont need it  further
+$ source deactivate GISIDEA_AI
+$conda env remove -n GISIDEA_AI
